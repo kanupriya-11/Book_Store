@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeLeaf.com">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Bookstore</title>
+ <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0; 
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('images/istockphoto-1356030067-170667a.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* Navigation bar */
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      padding: 10px;
+      display: flex;
+      justify-content: left;
+      align-items: left;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+    }
+
+    .navbar li {
+      margin: 0 10px;
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      background-color: darkgrey;
+      color: black;
+    }
+
+    /* About section */
+    .about-section {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 40px;
+      text-align: center;
+    }
+
+    .about-section h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: black;
+    }
+
+    .about-section p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    /* Footer */
+   footer {
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Responsive styles */
+    @media screen and (max-width: 768px) {
+      .navbar ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .navbar li {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="/">BookStore</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="available_books">Available Books</a></li>
+      <li><a href="my_books">My Books</a></li>
+      <li><a href="book_register">New Book Register</a></li>
+    </ul>
+  </div>
+
+  <section class="about-section">
+    <div class="container">
+      <h2 style="color: black;">Welcome to Our Bookstore</h2>
+      <p>
+        We are a passionate team of book lovers dedicated to providing a wide selection of books in various genres. Our bookstore is a haven for readers, where they can discover new stories, gain knowledge, and immerse themselves in the world of literature.
+      </p>
+      <p>
+        With a curated collection of both popular titles and hidden gems, we strive to offer an exceptional reading experience for book enthusiasts of all ages. Our friendly staff is always ready to assist you in finding your next great read or recommend books based on your interests.
+      </p>
+      <p>
+        Visit our store today and embark on a literary journey that will transport you to captivating realms, expand your horizons, and ignite your imagination. Happy reading!
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Bookstore. All rights reserved.</p>
+  </footer>
+</body>
+</html>
